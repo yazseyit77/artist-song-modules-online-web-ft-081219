@@ -6,8 +6,8 @@ require_relative './concerns/paramable.rb'
 class Artist
   attr_accessor :name
   attr_reader :songs
-  extend Memorable, Findable
-  include Paramable
+  extend Memorable::ClassMethods, Findable
+  include Memorable::InstanceMethods, Paramable
 
   @@artists = []
 
