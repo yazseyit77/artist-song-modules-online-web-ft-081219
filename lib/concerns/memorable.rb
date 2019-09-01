@@ -2,7 +2,7 @@
 
 module Memorable
   def reset_all
-    selfall.clear
+    self.all.clear
   end
 
   def count
